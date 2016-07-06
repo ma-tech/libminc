@@ -193,9 +193,13 @@ extern "C" {
 
 /* NC_UNSPECIFIED is defined here for backwards compatibility. With 
    NetCDF 2.x, NC_UNSPECIFIED may already be defined either through a macro
-   or an enum. In the latter case, this macro will override the enum. */
+   or an enum. In the latter case, this macro will override the enum.
+   Same for NC_NAT. */
 #ifndef NC_UNSPECIFIED
 #  define NC_UNSPECIFIED MI_ORIGINAL_TYPE
+#endif
+#ifndef NC_NAT
+#  define NC_NAT MI_ORIGINAL_TYPE
 #endif
 
 /* Some useful constants */
