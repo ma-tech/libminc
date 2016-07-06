@@ -74,6 +74,8 @@ typedef int nc_type;
 #define MIvector_dimension "vector_dimension"
 
 /*TODO: use minc2 definitions here?*/
+#define NC_NAT    0
+#define NC_UNSPECIFIED    0
 #define NC_BYTE   1
 #define NC_CHAR   2
 #define NC_SHORT  3
